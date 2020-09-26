@@ -89,6 +89,11 @@ textarea {
 
 /* -------------------- Base Header - Footer Styles -------------------- */
 
+body
+{
+  font-size: 16px;
+}
+
 header,
 footer {
   display: flex;
@@ -97,9 +102,32 @@ footer {
   flex-flow: row wrap;
 }
 
-header img{
-  width: 80%
+h1, h2, h3, h4 {
+  padding: 16px 16px;
+  margin: 0;
 }
+
+h1
+{
+  color: #fefefe;
+}
+
+input{
+ margin: 1em !important; 
+}
+
+/********HEADER********/
+
+header
+{
+  background-color: #212322;
+}
+
+header img{
+  width: 80%;
+  margin: 0.875em;
+}
+
 header .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -108,21 +136,65 @@ header .content-wrapper {
 }
 ul {
   padding: 0;
+  display: flex;
 }
 
 li{
   list-style-type: none;
+  margin: 0em 3em;
+  text-transform: uppercase;
+  color: #fefefe;
 }
 
-h1, h2, h3, h4, p {
-  padding: 0 1em;
+.header-divider {
+	border: 0.0625em gray solid;
+	width: 99%;
 }
 
-input{
- margin: 1em !important; 
+/****************MAIN****************/
+
+.hero-area {
+	background-image: url(../img/jake-melara-30679-unsplash.jpg);
+	height: 31.25em;
+	background-size: 62em;
+	background-position-x: center;
+	background-position-y: top;
 }
 
+h1{
+  margin: 0 !important;
+  padding-top: 1em;
+}
 
+aside {
+	background-color: #537159;
+}
+
+p
+{
+  padding: 0em 1em;
+}
+
+.features-items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.features-items article {
+	width: 73%;
+	text-align: center;
+}
+
+/*************FOOTER***************/
+
+.contact {
+	text-align: center;
+}
+
+.social {
+	text-align: center;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
