@@ -313,7 +313,7 @@ input[type="email"] {
 }
 
 .reviews img {
-	width: 90%;
+	width: 91.5%;
   padding: 0 1rem;
   margin-bottom: 1.5rem;
 }
@@ -333,9 +333,11 @@ footer
 .contact h4 {
   padding-top: 1rem;
   margin-bottom: 1.5rem;
+  font-style: normal;
 }
 .contact p {
   margin-bottom: 1.5rem;
+  font-style: normal;
 }
 
 .social h4 {
@@ -638,12 +640,128 @@ footer
     margin: 2.5rem 0 0 0;
     padding: 0 1.5rem;
   }
-
-
 }
 
 @media screen and (min-width: 1200px) {
-  /*Desktop styles here*/
+
+  /***********************HEADER***********************/
+
+  header{
+    height: 7.5rem;
+  }
+
+  header img{
+    margin-left: 3.8rem;
+  }
+
+  /***************************HERO*****************************/
+
+  .hero-area {
+    background-size: cover;
+    background-position-y: top !important;
+  }
+
+  main h1 {
+    padding-top: 4.8rem;
+    font-size: 3.6rem;
+    padding-left: 3.8rem;
+  }
+
+  /***********************ASIDE****************************/
+
+  aside {
+    height: 18rem;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .form-description h3 {
+    font-size: 2rem;
+    width: 77%;
+    padding: 0 0 0 3.8rem;
+  }
+
+  .form-description p {
+    font-size: 1.1rem;
+    width: 58%;
+    padding-left: 3.8rem;
+  }
+
+  .form-description {
+    width: 50%;
+    height: 18rem;
+    justify-content: center;
+  }
+  
+  .form h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  input[type="email"] {
+    margin: 1.1rem 0rem 1.4rem 0rem;
+    width: 73.5%;
+  }
+
+  input[type="button"] {
+    width: 75.6%;
+    margin: 0 1rem 1.5rem 0rem;
+    font-size: 1.5rem;
+  }
+
+  /****************************FEATURES***************************/
+
+  .features-items article {
+    width: 33.333333%;
+  }
+
+  .features h2 {
+    padding: 3.8rem;
+  }
+
+  .features p {
+    width: 50%;
+  }
+
+  /*******************************REVIEWS******************************/
+
+
+  .reviews .content-wrapper {
+    display: flex;
+  }
+
+  .reviews img{
+    width: 50%;
+    padding-left: 3.8rem;
+  }
+
+  .reviews article
+  {
+    width: 50%;
+  }
+
+  .reviews h2
+  {
+    padding-left: 3.8rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .reviews h3 {
+    padding-left: 0;
+    font-size: 1.8rem;
+  }
+
+  .reviews p{
+    padding-right: 3.8rem;
+    padding-left: 0;
+  }
+
 }
 
 @media print,
