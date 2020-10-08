@@ -92,66 +92,60 @@ textarea {
 body {
   font-size: 16px;
   color: #e2e3ed;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h1
-{
+h1 {
   font-size: 2em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-h2
-{
+h2 {
   font-size: 1.8em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
-h3{
+h3 {
   font-size: 1.6em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
-h4
-{
+h4 {
   font-size: 1.4em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
-h5
-{
+h5 {
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
-h6
-
-{
+h6 {
   font-size: 1em;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
-
 
 h1,
 h2,
 h3,
 h4 {
-  padding: 0px 16px;
+  padding: 0px 1rem;
   margin: 0;
+  font-style: normal;
 }
 
-p{
+p {
   line-height: 1.4rem;
+  font-style: normal;
 }
 /****************HEADER****************/
 
-header
-{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,6 +161,8 @@ header img {
 header a {
   text-decoration: none;
   color: #fefefe;
+  display: flex;
+  justify-content: center;
 }
 
 ul {
@@ -192,15 +188,14 @@ header .content-wrapper {
   align-items: center;
 }
 
-.form h3{
+.form h3 {
   margin-bottom: 8px;
   padding-top: 0;
 }
 
 /************************MAIN***********************/
 
-main h1
-{
+main h1 {
   margin: 0;
   padding-top: 1em;
 }
@@ -215,39 +210,57 @@ main h1
   background-position-y: top;
 }
 
+/**************************FAQ****************************/
+
+.faq {
+  background-color: #537159;
+}
+
+.faq h2 {
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq h4 {
+  padding-top: 0rem;
+}
+
+.faq p {
+  padding: 1rem 1.2rem 2rem 1.2rem;
+  margin: 0;
+}
+
 /**************************ASIDE***************************/
 
 aside {
   background-color: #537159;
 }
 
-aside h3
-{
+aside h3 {
   padding-top: 1rem;
 }
 
-aside p
-{
+aside p {
   padding-left: 1rem;
   margin-bottom: 1.5em;
 }
 
 input[type="button"] {
-	background-color: #2b423a;
-	color: #e2e3ed;
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	width: 90%;
-	margin: 0 1rem 1.5rem 1rem;
+  background-color: #2b423a;
+  color: #e2e3ed;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  width: 90%;
+  margin: 0 1rem 1.5rem 1rem;
   height: 2.5rem;
   border: 0;
 }
 
 input[type="email"] {
-	color: #212322;
-	margin: 1rem 0 1.5rem 1rem;
-	width: 88.5%;
-	height: 2.5rem;
+  color: #212322;
+  margin: 1rem 0 1.5rem 1rem;
+  width: 88.5%;
+  height: 2.5rem;
   padding-right: 0.3125rem;
   border: 0;
 }
@@ -255,14 +268,13 @@ input[type="email"] {
 /****************************FEATURE***************************/
 
 .features {
-	background-image: url(../img/raw.jpg);
-	background-size: 143em;
+  background-image: url(../img/raw.jpg);
+  background-size: 143em;
   background-position: center;
   height: auto;
 }
 
-.features h2
-{
+.features h2 {
   padding-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
@@ -280,24 +292,23 @@ input[type="email"] {
 }
 
 .features i {
-	font-size: 3.75em;
+  font-size: 3.75em;
   margin-bottom: 40px;
 }
 
-.features p{
+.features p {
   margin-top: 0;
   margin-bottom: 1.5rem;
 }
 
 /*******************************REVIEWS****************************/
 
-.reviews
-{
+.reviews {
   background-color: #537159;
 }
 
 .reviews h2 {
-	padding-top: 1rem;
+  padding-top: 1rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
 }
@@ -308,20 +319,58 @@ input[type="email"] {
 }
 
 .reviews p {
-	margin: 0;
+  margin: 0;
   padding: 0 1rem 1.5rem 1rem;
 }
 
 .reviews img {
-	width: 91.5%;
+  width: 91.5%;
   padding: 0 1rem;
   margin-bottom: 1.5rem;
 }
 
+/*******************************MISSION*********************************/
+
+.mission .content-wrapper {
+  background-color: #537159;
+}
+
+.mission h2 {
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission p {
+  padding: 0 1rem 1rem 1rem;
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+iframe {
+  width: 100%;
+}
+
+.contact-section {
+  background-color: #2b423a;
+}
+
+.contact-section h2 {
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section p {
+  padding: 0 1rem 1.5rem 1rem;
+  margin-bottom: 0;
+  font-style: normal;
+}
+
 /*******************************FOOTER***********************************/
 
-footer
-{
+footer {
   background-color: #212322;
   height: 20em;
 }
@@ -346,13 +395,14 @@ footer
 }
 
 .social-icons {
-	display: flex;
+  display: flex;
   justify-content: space-evenly;
   margin-bottom: 1.5rem;
 }
 
 .copyright p {
-	text-align: center;
+  text-align: center;
+  margin-bottom: 0;
 }
 
 /* ==========================================================================
@@ -445,49 +495,46 @@ footer
 */
 
 @media screen and (min-width: 768px) {
-
-  body{
-    font-size: 20px;
-  }
-
-  h1, h2, h3, h4
-  {
+  h1,
+  h2,
+  h3,
+  h4 {
     padding: 0 2.8rem;
   }
-  
+
   /*****************HEADER*****************/
 
-  header{
+  header {
     display: block;
     height: 5.5rem;
   }
 
-  header .content-wrapper
-  {
+  header .content-wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: inherit;
   }
 
-  header img{
+  header img {
     width: auto;
     margin-left: 2.8rem;
     height: 46%;
   }
 
-  .header-divider
-  {
+  .header-divider {
     display: none;
   }
 
-  li{
-    margin: 0rem 2.8rem;
+  li {
+    margin: 0rem 2.8rem 0 0;
   }
 
-  /*********************************MAIN******************************************/
+  /******************************************
+  =====MAIN
+  ******************************************/
 
-  /************************HERO************************/
+  /*********************HERO**********************/
 
   .hero-area {
     background-position-y: center;
@@ -498,10 +545,9 @@ footer
     width: 60%;
   }
 
-  /**********************ASIDE*****************************/
+  /********************ASIDE***********************/
 
-  aside
-  {
+  aside {
     height: 15rem;
   }
 
@@ -551,7 +597,7 @@ footer
     font-weight: bold;
   }
 
-  /*******************FEATURES********************/
+  /********************FEATURES*******************/
 
   .features h2 {
     padding-top: 2.8rem;
@@ -580,7 +626,9 @@ footer
     font-size: 1.2rem;
   }
 
-  /*****************************REVIEWS*******************************/
+  /**********************
+  ~~REVIEWS
+  **********************/
 
   .reviews h2 {
     padding-top: 2.8rem;
@@ -598,10 +646,91 @@ footer
     line-height: 2rem;
   }
 
-  /*****************************FOOTER*******************************/
 
-  footer{
-    height: 15em;
+  /****************************************************
+  =====ABOUT-PAGE
+  ****************************************************/
+
+  /**********************
+  ~~MISSION
+  **********************/
+
+  .mission h2 {
+    padding-top: 5rem;
+    margin-bottom: 0;
+  }
+
+  .mission-content {
+    display: flex;
+  }
+
+  .one {
+    padding: 1rem 0.8rem 4rem 2.8rem !important;
+  }
+
+  .two {
+    padding: 1rem 3.8rem 4rem 0 !important;
+  }
+
+  /**********************
+  ~~CONTACT-SECTION
+  **********************/
+
+  .contact-section h2 {
+    padding-top: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-content {
+    display: flex;
+    padding-bottom: 3rem;
+  }
+
+  .contact-section p {
+    padding: 0 2.8rem 1.5rem 2.8rem;
+    margin-bottom: 0;
+    font-style: normal;
+  }
+
+  /****************************************************
+  =====ABOUT-PAGE-END
+  ****************************************************/
+
+
+  /****************************************************
+  =====FAQ-PAGE
+  ****************************************************/
+
+  .faq h2 {
+    padding-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .faq p {
+    padding: 1rem 2.5rem 3rem 2.5rem;
+  }
+
+  .faq .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5.5rem;
+  }
+
+  .faq-content {
+    width: 50%;
+  }
+
+  /****************************************************
+  =====FAQ-PAGE-END
+  ****************************************************/
+
+
+  /**********************
+  ~~FOOTER
+  **********************/
+
+  footer {
+    height: auto;
   }
 
   .footer-content {
@@ -611,13 +740,14 @@ footer
     height: 13rem;
   }
 
-  .social, .contact {
+  .social,
+  .contact {
     margin-bottom: 1rem;
   }
 
   .contact h4 {
-    padding-top: 0; 
-    margin-bottom: 0; 
+    padding-top: 0;
+    margin-bottom: 0;
   }
 
   .contact p {
@@ -643,15 +773,25 @@ footer
 }
 
 @media screen and (min-width: 1200px) {
+  h2,
+  p {
+    padding: 0 3.8rem;
+  }
 
-  /***********************HEADER***********************/
+  /**********************
+  ~~HEADER
+  **********************/
 
-  header{
+  header {
     height: 7.5rem;
   }
 
-  header img{
+  header img {
     margin-left: 3.8rem;
+  }
+
+  li {
+    margin: 0 3.8rem 0 0;
   }
 
   /***************************HERO*****************************/
@@ -684,10 +824,11 @@ footer
     font-size: 2rem;
     width: 77%;
     padding: 0 0 0 3.8rem;
+    margin-top: -0.9em;
   }
 
   .form-description p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     width: 58%;
     padding-left: 3.8rem;
   }
@@ -697,7 +838,7 @@ footer
     height: 18rem;
     justify-content: center;
   }
-  
+
   .form h3 {
     margin: 0;
     padding: 0;
@@ -731,23 +872,20 @@ footer
 
   /*******************************REVIEWS******************************/
 
-
   .reviews .content-wrapper {
     display: flex;
   }
 
-  .reviews img{
+  .reviews img {
     width: 50%;
     padding-left: 3.8rem;
   }
 
-  .reviews article
-  {
+  .reviews article {
     width: 50%;
   }
 
-  .reviews h2
-  {
+  .reviews h2 {
     padding-left: 3.8rem;
     margin-bottom: 3.5rem;
   }
@@ -757,11 +895,81 @@ footer
     font-size: 1.8rem;
   }
 
-  .reviews p{
+  .reviews p {
     padding-right: 3.8rem;
     padding-left: 0;
   }
 
+  /******************************************ABOUT-PAGE**********************************/
+
+  /*****************************MISSION********************************/
+
+  .mission h2 {
+    padding-top: 5rem;
+    margin-bottom: 0;
+  }
+
+  .mission-content {
+    display: flex;
+  }
+
+  .one {
+    padding: 1rem 2.8rem 7rem 3.8rem !important;
+  }
+
+  .two {
+    padding: 1rem 3.8rem 4rem 0 !important;
+  }
+
+  address h4 {
+    padding: 0 3.8rem;
+  }
+
+  /*******************************CONTACT-SECTION*******************************/
+
+  .contact-section h2 {
+    padding-top: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .contact-content {
+    display: flex;
+    padding-bottom: 3rem;
+  }
+
+  .contact-section p {
+    padding: 0 3.8rem 1.5rem 3.8rem;
+    margin-bottom: 0;
+    font-style: normal;
+  }
+
+  /***********************************************ABOUT-PAGE-END****************************************/
+
+  /***********************************************FAQ-PAGE****************************************************/
+
+  .faq h2 {
+    padding-top: 6.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .faq h4 {
+    padding: 0 3.8rem 0 3.8rem;
+  }
+
+  .faq p {
+    padding: 1rem 3.8rem 3rem 3.8rem;
+  }
+
+  /********************FOOTER***************************/
+
+  .footer-content {
+    align-items: center;
+  }
+
+  .social,
+  .contact {
+    margin: 1.5rem 0 0 0;
+  }
 }
 
 @media print,
