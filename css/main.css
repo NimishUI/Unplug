@@ -236,32 +236,32 @@ aside {
   background-color: #537159;
 }
 
-aside h3 {
-  padding-top: 1rem;
+.form-description h3 {
+	padding-top: 1.2rem;
 }
 
 aside p {
-  padding-left: 1rem;
+  padding: 0 1rem;
   margin-bottom: 1.5em;
 }
 
 input[type="button"] {
   background-color: #2b423a;
   color: #e2e3ed;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  width: 90%;
+  width: 86%;
   margin: 0 1rem 1.5rem 1rem;
   height: 2.5rem;
   border: 0;
+  padding: 0;
 }
 
 input[type="email"] {
   color: #212322;
-  margin: 1rem 0 1.5rem 1rem;
-  width: 88.5%;
+  margin: 1rem 1rem 1.5rem 1rem;
+  width: 86%;
   height: 2.5rem;
-  padding-right: 0.3125rem;
   border: 0;
 }
 
@@ -308,7 +308,7 @@ input[type="email"] {
 }
 
 .reviews h2 {
-  padding-top: 1rem;
+  padding: 1rem 1.2rem 0 1.2rem;
   margin-bottom: 1.5rem;
   font-weight: 500;
 }
@@ -324,8 +324,8 @@ input[type="email"] {
 }
 
 .reviews img {
-  width: 91.5%;
-  padding: 0 1rem;
+  width: -moz-available;
+  padding: 0 1.2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -631,7 +631,7 @@ footer {
   **********************/
 
   .reviews h2 {
-    padding-top: 2.8rem;
+    padding: 2.8rem 2.8rem 0 2.8rem;
     margin-bottom: 2.5rem;
   }
 
@@ -799,6 +799,7 @@ footer {
   .hero-area {
     background-size: cover;
     background-position-y: top !important;
+    height: 38rem;
   }
 
   main h1 {
@@ -828,7 +829,7 @@ footer {
   }
 
   .form-description p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 58%;
     padding-left: 3.8rem;
   }
